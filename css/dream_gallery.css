@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(180deg, #fffaf4, #fdece4);
+  overflow-x: hidden;
+  /* height: 100vh; */
+  color: #333;
+  position: relative;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(243, 168, 164, 0.4);
+}
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+.card h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.2rem;
+  color: #d87a7a;
+  margin: 0.5rem 0;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.card-btn {
+  background: #f3a8a4;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.card-btn:hover {
+  background: #e88e8e;
+  transform: scale(1.1);
+}
+.scrolling-note {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #b57474;
+  font-style: italic;
+  animation: noteScroll 20s linear infinite;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+@keyframes noteScroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(243, 168, 164, 0.4);
+  animation: fadeIn 0.6s ease-in-out;
+  position: relative;
+  border: 2px solid #f3a8a4;
+}
+.modal h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #d87a7a;
+  margin-bottom: 1rem;
+}
+.modal p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.modal-btn {
+  padding: 12px 24px;
+  background: #f3a8a4;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
+}
+.modal-btn:hover {
+  background: #e88e8e;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.corner-image {
+  position: absolute;
+  width: 50px; /* adjust as needed */
+  height: auto;
+  z-index: 1001;
+  filter: drop-shadow(
+    0 0 10px rgba(255, 200, 200, 0.7)
+  ); /* Soft pinkish glow */
+}
+
+/* Butterfly specific animation */
+.butterfly {
+  top: -20px;
+  left: 5px;
+  transform: rotate(-15deg);
+  animation: flutter 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(173, 216, 230, 0.7)); /* light blue */
+}
+
+/* Flower specific animation */
+.flower {
+  top: -20px;
+  right: 5px;
+  transform: rotate(15deg);
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.7)); /* light pink */
+}
+
+/* Fluttering butterfly */
+@keyframes flutter {
+  0% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+  25% {
+    transform: translate(5px, -5px) rotate(-10deg);
+  }
+  50% {
+    transform: translate(0px, -10px) rotate(-20deg);
+  }
+  75% {
+    transform: translate(-5px, -5px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-15deg);
+  }
+}
+
+/* Floating flower */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(15deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(18deg);
+  }
+  100% {
+    transform: translateY(0) rotate(15deg);
+  }
+}
+
+.heart,
+.butterfly,
+.star {
+  position: absolute;
+  animation: float 10s linear infinite;
+  opacity: 0.4;
+}
+.heart {
+  font-size: 2rem;
+  animation-duration: 8s;
+}
+.butterfly {
+  font-size: 1.5rem;
+  animation-duration: 12s;
+}
+.star {
+  font-size: 1.2rem;
+  animation-duration: 10s;
+  left: 70%;
+}
+.petal {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fall 6s linear infinite;
+}
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 1rem;
+  }
+  .card img {
+    height: auto;
+  }
+  .modal-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+}

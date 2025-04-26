@@ -1,0 +1,259 @@
+/* Variables (converted to CSS custom properties) */
+:root {
+  --bg: #ffdef7; /* Soft pink background */
+  --tab-bg: #f9f9f9;
+  --f-color: #ba9872;
+  --s-color: #967b5c;
+  --t-color: #a38564;
+  --fo-color: #f9f9f9;
+  --fi-color: #e2e2e2;
+  --gradient-start: #f1a7c6; /* Soft gradient start */
+  --gradient-end: #ff92d8; /* Soft gradient end */
+  --heart-color: #ff4d88; /* Heart color */
+}
+
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg);
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  ); /* Soft gradient */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundAnimation 10s ease-in-out infinite; /* Animated gradient */
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(135deg, #f1a7c6, #ff92d8);
+  }
+  50% {
+    background: linear-gradient(135deg, #ff92d8, #f1a7c6);
+  }
+  100% {
+    background: linear-gradient(135deg, #f1a7c6, #ff92d8);
+  }
+}
+
+/* Envelope */
+.envelop {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200; /* Ensure it's above the background */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+}
+
+/* Responsive */
+@media (min-width: 400px) and (max-width: 600px) {
+  .envelop {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .envelop {
+    width: 25rem;
+    height: 20rem;
+  }
+}
+
+/* Front Paper */
+.envelop__front-paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.7rem;
+  border: 0.35rem solid var(--s-color);
+  background-color: var(--f-color);
+  clip-path: polygon(100% 0%, 50% 70%, 0% 0%, 0% 100%, 100% 100%);
+  z-index: 300;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Back Paper */
+.envelop__back-paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.7rem;
+  background-color: var(--s-color);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 90%);
+  z-index: 100;
+}
+
+/* Up Paper */
+.envelop__up-paper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.7rem;
+  background-color: var(--s-color);
+  z-index: 400;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 81%);
+}
+
+/* Sticker */
+.envelop__sticker {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 400;
+  background-image: url("https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png");
+  background-color: var(--fo-color);
+  border: 0.3rem solid var(--fi-color);
+  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* False Sticker */
+.envelop__false-sticker {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  left: 80%;
+  bottom: 0;
+  right: 0;
+  z-index: 300;
+  background-image: url("https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png");
+  background-color: var(--fo-color);
+  border: 0.3rem solid var(--fi-color);
+  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Content inside envelope */
+.envelop__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+}
+
+/* Notes */
+.love-notes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  width: 95%;
+  height: 18%;
+  background-color: var(--tab-bg);
+  position: absolute;
+  overflow: hidden;
+  transition: height 0.5s, opacity 0.25s;
+  box-shadow: 0px 0px 10px rgba(255, 75, 136, 0.6); /* Soft pink glow effect */
+  border-radius: 10px;
+}
+
+.note:nth-child(1) {
+  bottom: 70%;
+}
+
+.note:nth-child(2) {
+  bottom: 60%;
+}
+
+.note:nth-child(3) {
+  bottom: 50%;
+}
+
+.note:nth-child(4) {
+  bottom: 40%;
+}
+
+.note:nth-child(5) {
+  bottom: 30%;
+}
+
+.note:hover {
+  cursor: pointer;
+  height: 30%;
+  box-shadow: 0px 0px 15px rgba(255, 75, 136, 0.9); /* Glow effect on hover */
+}
+
+.note__text {
+  font-family: "Sofia", cursive;
+  padding: 1rem;
+  text-align: center;
+  color: var(--heart-color); /* Heart color for text */
+}
+
+.note__text p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Cursor Styles */
+.scissors {
+  cursor: url("https://i.postimg.cc/GtLCdKxR/sisors.png"), pointer;
+}
+
+.scissors:active {
+  cursor: url("https://i.postimg.cc/GtXQ7WPZ/pngwing-com.png"), pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next Button */
+.next-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--f-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: var(--s-color);
+}
