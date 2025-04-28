@@ -138,6 +138,24 @@ const details = [
     img: "./assets/healing_in_my_sleep.jpg",
   },
   {
+    title: "A Pinky Promise Beneath the Sunset",
+    description:
+      "A heartfelt scene where two individuals make a pinky promise against a breathtaking sunset backdrop. The soft hues of orange, pink, and purple in the sky create a dreamy, emotional atmosphere, highlighting the purity and sincerity of the promise shared between them.",
+    img: "./assets/pinky_promise_beneath_the_sunset.png",
+  },
+  {
+    title: "Eternal by the Riverside",
+    description:
+      "Beside an ancient stone bridge and a shimmering river, we sit wrapped in the magic of each other. Your pastel saree dances in the breeze, my hand holds yours, and in that moment, the world becomes a watercolor dream of endless love",
+    img: "./assets/river_of_dreams.png",
+  },
+  {
+    title: "Magic in Our Embrace",
+    description:
+      "Wrapped in golden twilight and the gentle hum of everyday magic, we hold each other close in a cozy kitchen where even the air dances with joy. In your arms, I find not just comfort — I find home, forever.",
+    img: "./assets/home_in_your_arms.png",
+  },
+  {
     title: "My Forever Love",
     description:
       "To my future wife, my heart has been writing this story for you long before we met. I dream of the day we stand together, building a life of laughter, love, and endless dreams. With all my heart, [Your Name].",
