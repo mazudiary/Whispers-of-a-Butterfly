@@ -2,166 +2,200 @@ const details = [
   {
     title: "Our First Dream",
     description:
-      "Beneath a moonlit sky, we stand hand in hand, our hearts whispering promises only love can understand. This is where our forever begins, my darling.",
+      "In the still hush of twilight, where stars held their breath and time dared not move, you stood before me heart open, eyes sparkling like galaxies. That ring you offered wasn’t just a promise, it was our first dream cast in gold. With trembling hands and a heart full of awe, I whispered yes to a forever I had prayed for in silence.",
     img: "./assets/moonlit_enchanted_meadow.png",
   },
   {
     title: "Garden of Love",
     description:
-      "In a garden where roses blush for us, our hearts bloom side by side. I dream of walking with you here, building a life filled with love.",
+      "Winding through a garden that bowed to your beauty, I held your hand like the most delicate bloom. Each step stirred petals beneath our feet, and each glance between us unfurled love like spring after a long winter. Here, among whispering leaves and the scent of jasmine, our hearts rooted in something timeless.",
     img: "./assets/enchanted_gradern_stroll.png",
   },
   {
     title: "Under the Stars",
     description:
-      "Under a canopy of stars, time pauses for us. Your eyes shine brighter than the heavens, and I know you’re my home, now and always.",
+      "We lay on a soft blanket of grass beneath a sky dusted with stars, their shimmer paling beside your gaze. The cool air kissed our skin while silence hummed sweet lullabies only our hearts could hear. In that perfect stillness, your hand in mine, I realized: home isn’t a place, it’s a person. And you are mine.",
     img: "./assets/starry_night_romance.png",
   },
   {
     title: "Sunset Kiss",
     description:
-      "As the sun dips low, painting the sky in hues of gold and pink, our lips meet in a kiss that feels like forever. This is our moment, my love.",
+      "The sky turned molten gold as we stood by the sea, waves lapping at our toes, sun painting halos around your face. You leaned in, and the world slowed — time paused to witness our kiss. It wasn’t just lips meeting; it was every goodbye turned into a promise, every tomorrow written in fire.",
     img: "./assets/sun_kiss_by_ocean.png",
   },
   {
     title: "Whispers on the Balcony",
     description:
-      "On a balcony kissed by golden light, I tuck a glowing flower behind your ear. Your blush tells a story of love, soft and eternal, as fireflies dance around us.",
+      "A soft breeze played with your hair as I tucked a flower behind your ear, stealing a moment suspended in dusk. The city lights shimmered below, unaware of the quiet magic above. You turned to me with eyes full of trust, and in that hush between us, I felt forever bloom gently into being.",
     img: "./assets/balcony_scene.png",
   },
   {
     title: "Sunlit Dance",
     description:
-      "In a sunlit garden, we twirl together, your turquoise saree flowing like a melody. My eyes hold only you, in a dance that promises forever.",
+      "You spun barefoot through the garden, laughter dancing on the breeze, your turquoise dress swirling like ocean dreams. Sunlight wrapped around you like a spotlight from heaven, and I watched, utterly lost in your joy, your grace, and the way my heart called your name with every beat.",
     img: "./assets/garden_dance.png",
   },
   {
     title: "Moonlit Serenity",
     description:
-      "In an enchanted meadow under starlight, we rest in each other’s arms. Petals swirl around us, echoing a love so serene, it feels like a dream.",
+      "In the glow of a silver moon, you leaned your head on my shoulder and sighed — a sound softer than any lullaby. Crickets sang in the background while our silhouettes melted into one. Wrapped in silence and moonlight, I realized peace wasn’t a place… it was the way you breathed beside me.",
     img: "./assets/moonlit_enchanted_meadow.png",
   },
   {
     title: "A Moment in the Sun",
     description:
-      "Beneath a wise old tree in a sun-dappled park, we share a silent vow. Your smile is my sunlight, and our love grows deeper with every breath.",
+      "We sat beneath the old oak tree, golden light catching in your lashes as you smiled at something only love could say. Your laughter sparkled in the air, warm as summer wind. And in that simple, sun-drenched moment, I understood eternity could fit inside a single look from you.",
     img: "./assets/sunlit_park.png",
   },
   {
     title: "Whispers in the Forest",
     description:
-      "A soft, whimsical night deep in an enchanted forest. Glowing trees, fluttering butterflies, and secret laughter beneath the stars.",
+      "The forest wrapped around us like an old storybook — every rustle a secret, every breeze a verse. With fingers intertwined, we wandered under canopies of green, the world hushed as if nature itself had paused to watch us fall deeper into love.",
     img: "./assets/whispers_in_forest.png",
   },
   {
     title: "Petal Rain Promise",
     description:
-      "Under a shower of cherry blossoms, our hearts whisper vows in a world where only love speaks.",
+      "Cherry blossoms fell like soft rain, weaving through your hair and decorating the moment like blessings. I took your hand gently, pinkies entwined, and we stood still while the petals made promises on our behalf that love, even when delicate, is the strongest force of all.",
     img: "./assets/petal_rain_promise.png",
   },
   {
     title: "Moonlight Serenade",
     description:
-      "Bathed in moonlight atop a hill, we share a silent serenade that only our hearts can hear.",
+      "Bathed in silver moonbeams, we swayed with no music but the rhythm of our hearts. The quiet wrapped around us like silk, and I whispered your name like a prayer. In that moment, I knew your love is the softest song my soul will ever sing.",
     img: "./assets/moonlight_serenade.png",
   },
   {
     title: "Ocean of Forever",
     description:
-      "Barefoot in twilight sands, reflections dance, and love becomes as endless as the glowing ocean.",
+      "The waves stretched endlessly before us, and still I saw no beauty greater than the way your hair danced in the sea breeze. Your hand in mine, we walked the shoreline with hearts open, and I knew this was not just love. This was infinity disguised as now.",
     img: "./assets/ocean_of_forever.png",
   },
   {
     title: "Carnival of Love",
     description:
-      "Spinning on a glowing carousel, laughing under heart-shaped balloons, our joy fills the evening air.",
+      "Amid spinning lights and music carried on laughter, we twirled like kids in a dream. You held a cotton candy smile, and I wished the night would never end. In that carousel of joy, I wasn’t chasing thrills. I was chasing you, the sweetest ride of all.",
     img: "./assets/carnival_of_love.png",
   },
   {
     title: "Storybook Forever",
     description:
-      "With every page turned, our love story unfolds — magical, eternal, and forever ours.",
+      "Your eyes held the kind of magic they write novels about. Our fingers turned invisible pages as we wrote new memories with every glance, every touch. Our love isn’t fiction, it’s the real-life fairytale I never thought I deserved but somehow found in you.",
     img: "./assets/storybook_forever.png",
   },
   {
     title: "Lake of Whispers",
     description:
-      "Whispering secrets by a moonlit lake, surrounded by swans and sparkling fireflies.",
+      "The lake mirrored the sky’s golden hush, while we sat beneath the old willow, barely speaking. But your presence spoke volumes. Every quiet second became a verse in the softest poem, the kind only lovers and water can understand.",
     img: "./assets/lake_of_whispers.png",
   },
   {
     title: "Castle of Us",
     description:
-      "Above the clouds, our castle stands — built by dreams, held together by forever love.",
+      "High on a hill of dreams, we stood beside the castle we built with every shared laugh and healed wound. Stone by stone, kiss by kiss, we shaped something unshakable, a home where love rules and time kneels in awe.",
     img: "./assets/castle_of_us.png",
   },
   {
     title: "Painted by Love",
     description:
-      "With laughter and colors, we paint the life we dream of — a masterpiece of us.",
+      "With brushes in hand and hearts unguarded, we painted not a canvas — but a future. Each color held a memory, every stroke a promise. Love spilled between giggles and quiet glances, until the masterpiece wasn’t on the wall, it was in us.",
     img: "./assets/painted_by_love.png",
   },
   {
     title: "Forest of Forever",
     description:
-      "Among glowing flowers and gentle fireflies, our love grows wild and free, eternal as the stars.",
+      "We ran hand in hand through towering trees and laughing leaves, your voice echoing like a melody through the woods. Here, love didn’t whisper, it roared, wild and true, growing roots deep beneath our feet as we carved a forever path together.",
     img: "./assets/forest_of_forever.png",
   },
   {
     title: "Morning With You",
     description:
-      "With your smile and morning light, even ordinary days become beautiful dreams come true.",
+      "Soft rays crept through the window, brushing your skin with gold as you stretched and smiled — sleep still tucked in your eyes. Wrapped in blankets and your warmth, I realized: if every morning begins with you, I’ll never need a dream again.",
     img: "./assets/morning_with_you.png",
   },
   {
     title: "Dreamscape Garden",
     description:
-      "Beneath a starlit sky in an enchanted garden, golden petals and soft smiles weave our perfect forever.",
+      "In a garden only dreams could grow, stars hung low and petals glowed in moonlight. We lay on the mossy earth, hands intertwined, breathing in silence like honey. This place, this peace, this love, it’s the lullaby I never want to wake from.",
     img: "./assets/dreamscape_garden.png",
   },
   {
     title: "A Gentle Forever",
     description:
-      "Beneath a twilight sky sprinkled with golden light, he tenderly adjusts her sari, not as a duty but as a silent vow. Every careful touch speaks a thousand promises — to protect, to cherish, to adore — without needing a single word. It’s in these hushed, stolen moments that forever quietly begins.",
+      "Beneath a setting sun, I knelt and adjusted your sari with reverence. It wasn’t just fabric — it was part of your soul. My fingers spoke vows my lips couldn’t form: I will love you tenderly, fiercely, and always in each sunrise, in every thread.",
     img: "./assets/a_gentle_forever.png",
   },
   {
-    title: "A Love the Seasons Remembern",
+    title: "Love the Seasons Remember",
     description:
-      "Amid the fading warmth of an autumn sunset, he leans close to the car window, memorizing the way she smiles just for him. The golden leaves fall like memories around them, but for a heartbeat, time pauses. They are two souls carving an unspoken goodbye into the evening air — a memory that even the seasons will carry forever.",
+      "Through golden leaves and foggy glass, your reflection lit up the room. I watched you sip tea with both hands — soft, present, divine. The seasons may pass, but this quiet, glowing love we share is the kind even time dares not forget.",
     img: "./assets/a_love_the_seasons_remembern.png",
   },
   {
     title: "Healing in My Sleep",
     description:
-      "In the quiet hush of the night, two lovers lie close, tears tracing silent promises across their faces. Suspended above them, a stitched heart sways softly — wounded but mending, just like their love. Though pain still lingers, the comfort of each other's presence stitches them back together, thread by tender thread, dreaming of a tomorrow born from today's ache.",
+      "Darkness crept into my dreams once — until your hand found mine in the night. You didn’t fix me, but you stayed, whispered love into my broken pieces, and slowly… I found light again. You are my safest place to rest, even in sleep.",
     img: "./assets/healing_in_my_sleep.jpg",
   },
   {
-    title: "A Pinky Promise Beneath the Sunset",
+    title: "Pinky Promise Beneath the Sunset",
     description:
-      "A heartfelt scene where two individuals make a pinky promise against a breathtaking sunset backdrop. The soft hues of orange, pink, and purple in the sky create a dreamy, emotional atmosphere, highlighting the purity and sincerity of the promise shared between them.",
+      "The sky wore colors of fire and love as we stood side by side, pinkies linked. It wasn’t a grand vow — it was a simple one, and perhaps the truest: I’ll stay with you, no matter how the sun falls or rises.",
     img: "./assets/pinky_promise_beneath_the_sunset.png",
   },
   {
     title: "Eternal by the Riverside",
     description:
-      "Beside an ancient stone bridge and a shimmering river, we sit wrapped in the magic of each other. Your pastel saree dances in the breeze, my hand holds yours, and in that moment, the world becomes a watercolor dream of endless love",
+      "Your sari fluttered in the river breeze like a prayer in motion. With bare feet in the cool earth and our hearts syncing in silence, I reached for your hand, not to hold you back, but to walk with you, always.",
     img: "./assets/river_of_dreams.png",
   },
   {
     title: "Magic in Our Embrace",
     description:
-      "Wrapped in golden twilight and the gentle hum of everyday magic, we hold each other close in a cozy kitchen where even the air dances with joy. In your arms, I find not just comfort — I find home, forever.",
+      "Steam curled from mugs and sunlight danced on your cheeks as I pulled you close in our little kitchen. It wasn’t just an embrace, it was home, magic, healing, and every silent way love says, 'I’m here. I choose you.'",
     img: "./assets/home_in_your_arms.png",
+  },
+  {
+    title: "Roots of Confidence",
+    description:
+      "I was shaky, uncertain — until your arms found me. Your love didn’t shout, it reminded. In your presence, I remembered my worth, and in your embrace, I planted new roots strong, proud, and blooming in your light.",
+    img: "./assets/roots_of_confidence.png",
+  },
+  {
+    title: "Held by Love",
+    description:
+      "You never asked me to be whole — you just held the broken. In your arms, I didn’t feel lost… I felt found. And maybe that’s what true love is: not the fixing, but the staying, the soft reminder that I’m still worthy.",
+  },
+  {
+    title: "Light in My Dark",
+    description:
+      "When my world dimmed, you didn’t flinch. You reached into the shadows, held my shaking hands, and became the light I couldn’t find alone. Your love is the flame I carry now, even in darkness, I remember how to glow.",
+  },
+  {
+    title: "Promise in Gold",
+    description:
+      "With golden light wrapping around our fingers, I took your hand in silence. We didn’t need to speak, the air between us whispered it all: I am yours, you are mine, and this love will outlast even the sun.",
+  },
+  {
+    title: "Moon Between Our Hands",
+    description:
+      "Your touch was gentle, reverent — like you were holding the moon, and maybe you were. Because when you held my hand, the night brightened, and every quiet promise floated between our palms like light we were born to share.",
+    img: "./assets/moon_between_our_hands.jpg",
+  },
+  {
+    title: "Thread of Destiny",
+    description:
+      "Even across oceans, across time zones and tearful nights, I feel your pull like a thread woven into my heartbeat. We were stitched together by something stronger than fate, and I believe… this thread will always lead me back to you.",
+    img: "./assets/thread_of_destiny.jpg",
   },
   {
     title: "My Forever Love",
     description:
-      "To my future wife, my heart has been writing this story for you long before we met. I dream of the day we stand together, building a life of laughter, love, and endless dreams. With all my heart, [Your Name].",
+      "To my dearest Butterfly — this love, born before we met, now lives in every breath I take. I dream of soft mornings, shared adventures, and your laughter as the soundtrack of my forever. Until then, I carry you in every heartbeat. — Basharul",
     img: "./assets/our_forever.jpg",
   },
 ];
+
 function showModal(index) {
   const modal = document.getElementById("modal");
   const modalTitle = document.getElementById("modalTitle");
