@@ -20,7 +20,7 @@ const details = [
   {
     title: "Sunset Kiss",
     description:
-      "The sky turned molten gold as we stood by the sea, waves lapping at our toes, sun painting halos around your face. You leaned in, and the world slowed — time paused to witness our kiss. It wasn’t just lips meeting; it was every goodbye turned into a promise, every tomorrow written in fire.",
+      "The sky turned molten gold as we stood by the sea, waves lapping at our toes, sun painting halos around your face. You leaned in, and the world slowed time paused to witness our kiss. It wasn’t just lips meeting; it was every goodbye turned into a promise, every tomorrow written in fire.",
     img: "./assets/sun_kiss_by_ocean.png",
   },
   {
@@ -38,7 +38,7 @@ const details = [
   {
     title: "Moonlit Serenity",
     description:
-      "In the glow of a silver moon, you leaned your head on my shoulder and sighed — a sound softer than any lullaby. Crickets sang in the background while our silhouettes melted into one. Wrapped in silence and moonlight, I realized peace wasn’t a place… it was the way you breathed beside me.",
+      "In the glow of a silver moon, you leaned your head on my shoulder and sighed a sound softer than any lullaby. Crickets sang in the background while our silhouettes melted into one. Wrapped in silence and moonlight, I realized peace wasn’t a place… it was the way you breathed beside me.",
     img: "./assets/moonlit_enchanted_meadow.png",
   },
   {
@@ -50,7 +50,7 @@ const details = [
   {
     title: "Whispers in the Forest",
     description:
-      "The forest wrapped around us like an old storybook — every rustle a secret, every breeze a verse. With fingers intertwined, we wandered under canopies of green, the world hushed as if nature itself had paused to watch us fall deeper into love.",
+      "The forest wrapped around us like an old storybook, every rustle a secret, every breeze a verse. With fingers intertwined, we wandered under canopies of green, the world hushed as if nature itself had paused to watch us fall deeper into love.",
     img: "./assets/whispers_in_forest.png",
   },
   {
@@ -98,7 +98,7 @@ const details = [
   {
     title: "Painted by Love",
     description:
-      "With brushes in hand and hearts unguarded, we painted not a canvas — but a future. Each color held a memory, every stroke a promise. Love spilled between giggles and quiet glances, until the masterpiece wasn’t on the wall, it was in us.",
+      "With brushes in hand and hearts unguarded, we painted not a canvas but a future. Each color held a memory, every stroke a promise. Love spilled between giggles and quiet glances, until the masterpiece wasn’t on the wall, it was in us.",
     img: "./assets/painted_by_love.png",
   },
   {
@@ -110,7 +110,7 @@ const details = [
   {
     title: "Morning With You",
     description:
-      "Soft rays crept through the window, brushing your skin with gold as you stretched and smiled — sleep still tucked in your eyes. Wrapped in blankets and your warmth, I realized: if every morning begins with you, I’ll never need a dream again.",
+      "Soft rays crept through the window, brushing your skin with gold as you stretched and smiled sleep still tucked in your eyes. Wrapped in blankets and your warmth, I realized: if every morning begins with you, I’ll never need a dream again.",
     img: "./assets/morning_with_you.png",
   },
   {
@@ -122,25 +122,25 @@ const details = [
   {
     title: "A Gentle Forever",
     description:
-      "Beneath a setting sun, I knelt and adjusted your sari with reverence. It wasn’t just fabric — it was part of your soul. My fingers spoke vows my lips couldn’t form: I will love you tenderly, fiercely, and always in each sunrise, in every thread.",
+      "Beneath a setting sun, I knelt and adjusted your sari with reverence. It wasn’t just fabric, it was part of your soul. My fingers spoke vows my lips couldn’t form: I will love you tenderly, fiercely, and always in each sunrise, in every thread.",
     img: "./assets/a_gentle_forever.png",
   },
   {
     title: "Love the Seasons Remember",
     description:
-      "Through golden leaves and foggy glass, your reflection lit up the room. I watched you sip tea with both hands — soft, present, divine. The seasons may pass, but this quiet, glowing love we share is the kind even time dares not forget.",
+      "Through golden leaves and foggy glass, your reflection lit up the room. I watched you sip tea with both hands soft, present, divine. The seasons may pass, but this quiet, glowing love we share is the kind even time dares not forget.",
     img: "./assets/a_love_the_seasons_remembern.png",
   },
   {
     title: "Healing in My Sleep",
     description:
-      "Darkness crept into my dreams once — until your hand found mine in the night. You didn’t fix me, but you stayed, whispered love into my broken pieces, and slowly… I found light again. You are my safest place to rest, even in sleep.",
+      "Darkness crept into my dreams once until your hand found mine in the night. You didn’t fix me, but you stayed, whispered love into my broken pieces, and slowly… I found light again. You are my safest place to rest, even in sleep.",
     img: "./assets/healing_in_my_sleep.jpg",
   },
   {
     title: "Pinky Promise Beneath the Sunset",
     description:
-      "The sky wore colors of fire and love as we stood side by side, pinkies linked. It wasn’t a grand vow — it was a simple one, and perhaps the truest: I’ll stay with you, no matter how the sun falls or rises.",
+      "The sky wore colors of fire and love as we stood side by side, pinkies linked. It wasn’t a grand vow, it was a simple one, and perhaps the truest: I’ll stay with you, no matter how the sun falls or rises.",
     img: "./assets/pinky_promise_beneath_the_sunset.png",
   },
   {
@@ -158,13 +158,13 @@ const details = [
   {
     title: "Roots of Confidence",
     description:
-      "I was shaky, uncertain — until your arms found me. Your love didn’t shout, it reminded. In your presence, I remembered my worth, and in your embrace, I planted new roots strong, proud, and blooming in your light.",
+      "I was shaky, uncertain until your arms found me. Your love didn’t shout, it reminded. In your presence, I remembered my worth, and in your embrace, I planted new roots strong, proud, and blooming in your light.",
     img: "./assets/roots_of_confidence.png",
   },
   {
     title: "Held by Love",
     description:
-      "You never asked me to be whole — you just held the broken. In your arms, I didn’t feel lost… I felt found. And maybe that’s what true love is: not the fixing, but the staying, the soft reminder that I’m still worthy.",
+      "You never asked me to be whole, you just held the broken. In your arms, I didn’t feel lost… I felt found. And maybe that’s what true love is: not the fixing, but the staying, the soft reminder that I’m still worthy.",
   },
   {
     title: "Light in My Dark",
@@ -179,7 +179,7 @@ const details = [
   {
     title: "Moon Between Our Hands",
     description:
-      "Your touch was gentle, reverent — like you were holding the moon, and maybe you were. Because when you held my hand, the night brightened, and every quiet promise floated between our palms like light we were born to share.",
+      "Your touch was gentle, reverent like you were holding the moon, and maybe you were. Because when you held my hand, the night brightened, and every quiet promise floated between our palms like light we were born to share.",
     img: "./assets/moon_between_our_hands.jpg",
   },
   {
@@ -191,7 +191,7 @@ const details = [
   {
     title: "My Forever Love",
     description:
-      "To my dearest Butterfly — this love, born before we met, now lives in every breath I take. I dream of soft mornings, shared adventures, and your laughter as the soundtrack of my forever. Until then, I carry you in every heartbeat. — Basharul",
+      "To my dearest Butterfly this love, born before we met, now lives in every breath I take. I dream of soft mornings, shared adventures, and your laughter as the soundtrack of my forever. Until then, I carry you in every heartbeat. — Basharul",
     img: "./assets/our_forever.jpg",
   },
 ];
