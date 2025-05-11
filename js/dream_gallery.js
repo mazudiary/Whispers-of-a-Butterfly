@@ -189,9 +189,45 @@ const details = [
     img: "./assets/thread_of_destiny.jpg",
   },
   {
+    title: "Dreamspell Embrace",
+    description:
+      "In a world painted in twilight, where shadows blur into beauty and the sky forgets where day ends and dreams begin, I hold you not just in my arms, but in the aching spaces where loneliness once lived. You are not made of flesh alone, but of something softer magic, maybe, or moonlight folded into skin. When the silence inside me grows too loud, you quiet the ache. You don’t ask me to be whole; you wrap yourself around the broken parts and call them beautiful. In your embrace, I don’t just heal I become. I begin again.",
+    img: "./assets/dreamspell_embrace.jpg",
+  },
+  {
+    title: "Gardens of the Heart",
+    description:
+      "In a world that often forgets to water what matters, I promise you this: when your soul feels wilted and your smile hides behind the clouds, I will remember the days you poured light into my dark. I will kneel beside the quiet ache in your chest, and with patient hands and endless love, I will help you bloom again. Just as you once tended to the flowers of my weary heart, I will be your spring again, again and again, until your roots remember the warmth of love and the joy of growing.",
+    img: "./assets/gardens_of_the_heart.jpg",
+  },
+  {
+    title: "Henna Stained Promises",
+    description:
+      "With your hands on my face and your love written in henna, I feel the weight of forever soft, sacred, and unshakably ours. Draped in tradition, wrapped in devotion, and breathing in the stillness between our foreheads, I know this is more than a moment, it’s the beginning of a lifetime. You and I, two souls stitched in love’s deepest thread, have found our home in each other’s hearts. This kiss isn’t just a touch; it’s a silent promise echoing through every tomorrow we’ll share.",
+    img: "./assets/henna_stained_promises.jpg",
+  },
+  {
+    title: "Home Inside My Heart",
+    description:
+      "In my dreams, you don’t just live beside me, you live within me, wrapped safely in the space no one else has ever reached. My arms become walls, my heartbeat your rhythm. You’re not just the love I long for; you’re the peace my soul was designed to hold. With you, I’m not just strong. I’m whole. And when the world forgets to be kind, I’ll find you right here, curled in the warmth of my forever. The home I never knew I was waiting to build.",
+    img: "./assets/home_inside_my_heart.jpg",
+  },
+  {
+    title: "The Evenings I Dream You Home",
+    description:
+      "In this vision I return to over and over, she’s there across the table, glowing in the hush of evening, laughter caught between candlelight and city windows. I don’t know her yet, but I know the way she’ll feel like peace wrapped in skin, like coming home without saying a word. I imagine her eyes holding gentle stories, her fingers tracing the rim of a wine glass as if she’s always belonged in that moment. This seat stays empty for now, but not untouched because I fill it every night with the dream of her, waiting, believing, knowing one day she'll arrive and make this imagined evening real.",
+    img: "./assets/the_evenings_dream.jpg",
+  },
+  {
+    title: "Us, Beneath a Shared Star",
+    description:
+      "There we stood, side by side, two hands reaching toward the same little spark in the endless night. That tiny blue star became a quiet promise a whisper from the universe saying, you were meant to find each other. In that hush beneath the heavens, time stopped. And with your hand grazing mine, I felt something ancient awaken. One star, two souls, and a forever written not just in light, but in destiny’s own ink.",
+    img: "./assets/us_beneath_a_shared_star.png",
+  },
+  {
     title: "My Forever Love",
     description:
-      "To my dearest Butterfly this love, born before we met, now lives in every breath I take. I dream of soft mornings, shared adventures, and your laughter as the soundtrack of my forever. Until then, I carry you in every heartbeat. — Basharul",
+      "There we stood, side by side, two hands reaching toward the same little spark in the endless night. That tiny blue star became a quiet promise  a whisper from the universe saying, you were meant to find each other. In that hush beneath the heavens, time stopped. And with your hand grazing mine, I felt something ancient awaken. One star, two souls, and a forever written not just in light, but in destiny’s own ink.",
     img: "./assets/our_forever.jpg",
   },
 ];
