@@ -225,6 +225,24 @@ const details = [
     img: "./assets/us_beneath_a_shared_star.png",
   },
   {
+    title: "Celestial Embrace",
+    description:
+      "Outlined in starlight, we found each other in a space where silence reigns and gravity fades. Suspended on the fingertips of fate, we held one another — not just with arms, but with the eternal pull of connection across the cosmos. In that weightless moment, love was the only constant.",
+    img: "./assets/celestial_connection.png",
+  },
+  {
+    title: "Shared Warmth",
+    description:
+      "Two flames danced between our hands, fragile yet fearless. As the chill crept in, we didn't speak — we simply protected the light. In that small act, wrapped in silence and sincerity, I realized love isn’t always loud. Sometimes, it’s just the warmth we choose to hold for each other.",
+    img: "./assets/sharing_warmth.png",
+  },
+  {
+    title: "Across the Stars",
+    description:
+      "We floated in separate worlds, tethered only by memory and the gravity of what we once shared. Through galaxies and time, I reached — and so did you. Even when silence stretched light-years wide, the pull of your soul found mine again. Some love isn't lost. It's just waiting in orbit.",
+    img: "./assets/cosmic_connection.png",
+  },
+  {
     title: "My Forever Love",
     description:
       "There we stood, side by side, two hands reaching toward the same little spark in the endless night. That tiny blue star became a quiet promise  a whisper from the universe saying, you were meant to find each other. In that hush beneath the heavens, time stopped. And with your hand grazing mine, I felt something ancient awaken. One star, two souls, and a forever written not just in light, but in destiny’s own ink.",
