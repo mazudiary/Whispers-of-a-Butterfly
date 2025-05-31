@@ -227,20 +227,38 @@ const details = [
   {
     title: "Celestial Embrace",
     description:
-      "Outlined in starlight, we found each other in a space where silence reigns and gravity fades. Suspended on the fingertips of fate, we held one another — not just with arms, but with the eternal pull of connection across the cosmos. In that weightless moment, love was the only constant.",
+      "Outlined in starlight, we found each other in a space where silence reigns and gravity fades. Suspended on the fingertips of fate, we held one another not just with arms, but with the eternal pull of connection across the cosmos. In that weightless moment, love was the only constant.",
     img: "./assets/celestial_connection.png",
   },
   {
     title: "Shared Warmth",
     description:
-      "Two flames danced between our hands, fragile yet fearless. As the chill crept in, we didn't speak — we simply protected the light. In that small act, wrapped in silence and sincerity, I realized love isn’t always loud. Sometimes, it’s just the warmth we choose to hold for each other.",
+      "Two flames danced between our hands, fragile yet fearless. As the chill crept in, we didn't speak we simply protected the light. In that small act, wrapped in silence and sincerity, I realized love isn’t always loud. Sometimes, it’s just the warmth we choose to hold for each other.",
     img: "./assets/sharing_warmth.png",
   },
   {
     title: "Across the Stars",
     description:
-      "We floated in separate worlds, tethered only by memory and the gravity of what we once shared. Through galaxies and time, I reached — and so did you. Even when silence stretched light-years wide, the pull of your soul found mine again. Some love isn't lost. It's just waiting in orbit.",
+      "We floated in separate worlds, tethered only by memory and the gravity of what we once shared. Through galaxies and time, I reached and so did you. Even when silence stretched light-years wide, the pull of your soul found mine again. Some love isn't lost. It's just waiting in orbit.",
     img: "./assets/cosmic_connection.png",
+  },
+  {
+    title: "Meet Morning Brew Buddy!",
+    description:
+      "A happy, animated coffee cup with a big smile, arms, and legs, standing on a wooden table representing a cheerful morning coffee mascot",
+    img: "./assets/cosmic_connection.png",
+  },
+  {
+    title: "A Touch That Lights the Soul",
+    description:
+      "An emotional digital painting of a glowing hand touching another person's chest, illuminating their heart area with golden light and butterflies, symbolizing emotional healing and human connection.",     
+      img: "./assets/cosmic_connection.png",
+  },
+  {
+    title: "Late-Night Drives and Simple Joys",
+    description: 
+     "An illustrated cartoon of a couple inside a car at night. The girl smiles while holding a drink, and the boy gestures with one finger raised while holding a burger, both appearing happy and content in each other's company", 
+      img: "./assets/cosmic_connection.png",
   },
   {
     title: "My Forever Love",
@@ -254,14 +272,205 @@ function showModal(index) {
   const modal = document.getElementById("modal");
   const modalTitle = document.getElementById("modalTitle");
   const modalDescription = document.getElementById("modalDescription");
+  
+  // Set content
   modalTitle.textContent = details[index].title;
   modalDescription.textContent = details[index].description;
+  
+  // Make sure modal appears on top with higher z-index
   modal.style.display = "flex";
+  modal.style.zIndex = "2000"; // Higher than image preview modal
+  
+  // Add a class to show it's on top of another modal
+  if (document.getElementById('imageModal').style.display === 'flex') {
+    modal.classList.add('modal-on-top');
+  } else {
+    modal.classList.remove('modal-on-top');
+  }
 }
+
 function closeModal() {
   document.getElementById("modal").style.display = "none";
+  
+  // If image preview was behind, remove the dimming class
+  const imageModal = document.getElementById('imageModal');
+  imageModal.classList.remove('behind-modal');
 }
-// Keyboard accessibility
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal();
+
+// Global variables to track current image and total count
+let currentPreviewIndex = 0;
+let currentModalIndex = 0;
+
+// Function to show the previous image and update modal index
+function showPreviousImage() {
+  const allCards = document.querySelectorAll('.card');
+  if (allCards.length === 0) return;
+  
+  currentPreviewIndex--;
+  if (currentPreviewIndex < 0) {
+    currentPreviewIndex = allCards.length - 1; // Loop to last image
+  }
+  
+  updatePreviewContent();
+  
+  // If modal is open, update it too
+  const modal = document.getElementById("modal");
+  if (modal.style.display === "flex") {
+    showModal(currentModalIndex);
+  }
+}
+
+// Function to show the next image and update modal index
+function showNextImage() {
+  const allCards = document.querySelectorAll('.card');
+  if (allCards.length === 0) return;
+  
+  currentPreviewIndex++;
+  if (currentPreviewIndex >= allCards.length) {
+    currentPreviewIndex = 0; // Loop to first image
+  }
+  
+  updatePreviewContent();
+  
+  // If modal is open, update it too
+  const modal = document.getElementById("modal");
+  if (modal.style.display === "flex") {
+    showModal(currentModalIndex);
+  }
+}
+// Helper function to update preview content
+function updatePreviewContent() {
+  const allCards = document.querySelectorAll('.card');
+  const card = allCards[currentPreviewIndex];
+  const img = card.querySelector('img');
+  const title = card.querySelector('h2').textContent;
+  const desc = card.querySelector('p').textContent.trim();
+  
+  // Find the modal index for this card (from the showModal call in the button)
+  const button = card.querySelector('.card-btn');
+  if (button) {
+    const onclickAttr = button.getAttribute('onclick');
+    if (onclickAttr && onclickAttr.includes('showModal')) {
+      const match = onclickAttr.match(/showModal\((\d+)\)/);
+      if (match && match[1]) {
+        currentModalIndex = parseInt(match[1]);
+      }
+    }
+  }
+  
+  document.getElementById('previewImage').src = img.getAttribute('src');
+  document.getElementById('imageTitle').textContent = title;
+  document.getElementById('imageDescription').textContent = desc;
+}
+
+// Show modal from image preview without closing the preview
+function showModalFromPreview() {
+  // Show the modal with the content for this card
+  showModal(currentModalIndex);
+  
+  // Add a semi-transparent overlay between the modals
+  const imageModal = document.getElementById('imageModal');
+  imageModal.classList.add('behind-modal');
+}
+
+// Updated showImagePreview function
+function showImagePreview(imageSrc, imageTitle, event) {
+  const modal = document.getElementById('imageModal');
+  const previewImage = document.getElementById('previewImage');
+  const imageTitle_el = document.getElementById('imageTitle');
+  const imageDesc = document.getElementById('imageDescription');
+  
+  // Find the clicked image and its card
+  const clickedImg = event.target;
+  const card = clickedImg.closest('.card');
+  
+  // Get card content
+  const cardText = card.querySelector('p').textContent.trim();
+  
+  // Find all cards to determine index
+  const allCards = Array.from(document.querySelectorAll('.card'));
+  currentPreviewIndex = allCards.indexOf(card);
+  
+  // Find the modal index for this card
+  const button = card.querySelector('.card-btn');
+  if (button) {
+    const onclickAttr = button.getAttribute('onclick');
+    if (onclickAttr && onclickAttr.includes('showModal')) {
+      const match = onclickAttr.match(/showModal\((\d+)\)/);
+      if (match && match[1]) {
+        currentModalIndex = parseInt(match[1]);
+      }
+    }
+  }
+  
+  // Set preview content
+  previewImage.src = imageSrc;
+  imageTitle_el.textContent = imageTitle;
+  imageDesc.textContent = cardText;
+  
+  // Check if we should show the See More button
+  const previewSeeMore = document.getElementById('previewSeeMore');
+  if (button && button.getAttribute('onclick') && button.getAttribute('onclick').includes('showModal')) {
+    previewSeeMore.style.display = 'block';
+  } else {
+    previewSeeMore.style.display = 'none';
+  }
+  
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  
+  event.stopPropagation();
+}
+// Close image preview
+function closeImagePreview() {
+  const modal = document.getElementById('imageModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Add keyboard event listener for arrow keys
+// Add keyboard event listener for arrow keys
+document.addEventListener('keydown', function(event) {
+  const imageModal = document.getElementById('imageModal');
+  const detailModal = document.getElementById('modal');
+  
+  // Check if either modal is visible
+  if (imageModal.style.display === 'flex') {
+    if (event.key === 'ArrowLeft') {
+      showPreviousImage();
+      event.preventDefault();
+    } else if (event.key === 'ArrowRight') {
+      showNextImage();
+      event.preventDefault();
+    } else if (event.key === 'Escape') {
+      closeImagePreview();
+      event.preventDefault();
+    }
+  } else if (detailModal.style.display === 'flex') {
+    // Allow navigating even when only the detail modal is open
+    if (event.key === 'ArrowLeft') {
+      currentPreviewIndex--;
+      if (currentPreviewIndex < 0) currentPreviewIndex = details.length - 1;
+      currentModalIndex = currentPreviewIndex;
+      showModal(currentModalIndex);
+      event.preventDefault();
+    } else if (event.key === 'ArrowRight') {
+      currentPreviewIndex++;
+      if (currentPreviewIndex >= details.length) currentPreviewIndex = 0;
+      currentModalIndex = currentPreviewIndex;
+      showModal(currentModalIndex);
+      event.preventDefault();
+    } else if (event.key === 'Escape') {
+      closeModal();
+      event.preventDefault();
+    }
+  }
+});
+
+// Close on clicking outside the image
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('imageModal');
+  if (event.target == modal) {
+    closeImagePreview();
+  }
 });
