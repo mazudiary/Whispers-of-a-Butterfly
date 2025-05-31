@@ -38,7 +38,7 @@ body {
 .card img {
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 20px 20px 0 0;
 }
 .card-content {
@@ -255,16 +255,173 @@ body {
     transform: translateY(-50px);
   }
 }
+
+/* Image Modal Styles */
+.modal {
+  z-index: 1100;
+}
+
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Reduced opacity for better blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* For Safari support */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-on-top {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.image-modal-content {
+ /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 90%;
+  /* max-height: 90%; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.behind-modal {
+  opacity: 0.85; /* Dim the background modal */
+  transition: opacity 0.3s ease;
+}
+.image-modal.active {
+  display: flex;
+}
+.image-modal.active .behind-modal {
+  opacity: 0.5; /* Dim the background when modal is active */
+}
+.close-image-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+#imageTitle {
+  margin-bottom: 15px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  font-style: bold;
+  color: #FF637D;
+}
+
+.preview-description {
+  margin: 0 0 15px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: #f1e1e1;
+  font-size: 16px;
+  max-width: 90%;
+}
+
+
+/* Navigation arrows for image preview */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, #ff9eaf, #ff778e);
+  color: #ebdbdb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1002;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.nav-arrow.prev {
+  left: 10px;
+}
+
+.nav-arrow.next {
+  right: 10px;
+}
+
+/* Preview button styles */
+.preview-actions {
+  margin-top: 20px;
+}
+
+.preview-btn {
+  background: linear-gradient(145deg, #ff9eaf, #ff778e);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 121, 142, 0.3);
+}
+
+.preview-btn:hover {
+  background: linear-gradient(145deg, #ff778e, #ff5a75);
+  box-shadow: 0 5px 15px rgba(255, 121, 142, 0.5);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .gallery-container {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     padding: 1rem;
   }
-  .card img {
-    height: auto;
-  }
+
   .modal-content {
     max-width: 90%;
     padding: 1.5rem;
+  }
+
+  .nav-arrow {
+    top: 95%;
+
+    /* Inherit from .preview-btn */
+    background: linear-gradient(145deg, #ff9eaf, #ff778e);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(255, 121, 142, 0.3);
+  }
+
+  .nav-arrow:hover {
+    background: linear-gradient(145deg, #ff778e, #ff5a75);
+    box-shadow: 0 5px 15px rgba(255, 121, 142, 0.5);
   }
 }
