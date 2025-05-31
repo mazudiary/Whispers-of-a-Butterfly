@@ -19,8 +19,13 @@
     </audio>
     <div class="gallery-container">
       <!-- Card 1 -->
-      <div class="card" onclick="showModal(0)">
-        <img src="./assets/our_first_dream.webp" alt="Moonlit Meadow" />
+      <div class="card">
+        <img 
+          src="./assets/our_first_dream.webp" 
+          alt="Moonlit Meadow" 
+          onclick="showImagePreview('./assets/our_first_dream.webp', 'Our First Dream', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Our First Dream</h2>
           <p>
@@ -28,91 +33,119 @@
             your hand feels like holding the universe soft, real, and forever
             meant to be.
           </p>
-
-          <button class="card-btn" aria-label="See more about Our First Dream">
+          <button class="card-btn" onclick="showModal(0)" aria-label="See more about Our First Dream">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 2 -->
-      <div class="card" onclick="showModal(1)">
-        <img src="./assets/enchanted_gradern_stroll.webp" alt="Garden Stroll" />
+      <div class="card">
+        <img 
+          src="./assets/enchanted_gradern_stroll.webp" 
+          alt="Garden Stroll" 
+          onclick="showImagePreview('./assets/enchanted_gradern_stroll.webp', 'Garden of Love', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Garden of Love</h2>
           <p>
             Among roses and laughter, you bloom beside me. Every step we take
             feels like a chapter in the sweetest love story ever told.
           </p>
-
-          <button class="card-btn" aria-label="See more about Garden of Love">
+          <button class="card-btn" onclick="showModal(1)" aria-label="See more about Garden of Love">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 3 -->
-      <div class="card" onclick="showModal(2)">
-        <img src="./assets/starry_night_romance.webp" alt="Starry Night" />
+      <div class="card">
+        <img 
+          src="./assets/starry_night_romance.webp" 
+          alt="Starry Night" 
+          onclick="showImagePreview('./assets/starry_night_romance.webp', 'Under the Stars', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Under the Stars</h2>
           <p>
             Beneath the endless night sky, your gaze is my home. In your
             silence, I hear the forever my heart has always waited for.
           </p>
-          <button class="card-btn" aria-label="See more about Under the Stars">
+          <button class="card-btn" onclick="showModal(2)" aria-label="See more about Under the Stars">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 4 -->
-      <div class="card" onclick="showModal(3)">
-        <img src="./assets/sun_kiss_by_ocean.webp" alt="Sunset Kiss" />
+      <div class="card">
+        <img 
+          src="./assets/sun_kiss_by_ocean.webp" 
+          alt="Sunset Kiss" 
+          onclick="showImagePreview('./assets/sun_kiss_by_ocean.webp', 'Sunset Kiss', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Sunset Kiss</h2>
           <p>
             With the sky blushing above, your kiss feels like magic warm, soft,
             and full of promises wrapped in golden light.
           </p>
-          <button class="card-btn" aria-label="See more about Sunset Kiss">
+          <button class="card-btn" onclick="showModal(3)" aria-label="See more about Sunset Kiss">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 5 -->
-      <div class="card" onclick="showModal(4)">
-        <img src="./assets/balcony_scene.webp" alt="Balcony Scene" />
+      <div class="card">
+        <img 
+          src="./assets/balcony_scene.webp" 
+          alt="Balcony Scene" 
+          onclick="showImagePreview('./assets/balcony_scene.webp', 'Whispers on the Balcony', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Whispers on the Balcony</h2>
           <p>
             Tucking a flower behind your ear, I hear love in your smile. Even
             the wind seems to pause, listening to our quiet forever.
           </p>
-          <button
-            class="card-btn"
-            aria-label="See more about Whispers on the Balcony"
-          >
+          <button class="card-btn" onclick="showModal(4)" aria-label="See more about Whispers on the Balcony">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 6 -->
-      <div class="card" onclick="showModal(5)">
-        <img src="./assets/garden_dance.webp" alt="Garden Dance" />
+      <div class="card">
+        <img 
+          src="./assets/garden_dance.webp" 
+          alt="Garden Dance" 
+          onclick="showImagePreview('./assets/garden_dance.webp', 'Sunlit Dance', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Sunlit Dance</h2>
           <p>
             In sunlight and your swirling saree, I see our whole future
             spinning. My heart dances to the rhythm of your smile.
           </p>
-          <button class="card-btn" aria-label="See more about Sunlit Dance">
+          <button class="card-btn" onclick="showModal(5)" aria-label="See more about Sunlit Dance">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 7 -->
-      <div class="card" onclick="showModal(6)">
-        <img
-          src="./assets/moonlit_enchanted_meadow.webp"
-          alt="Moonlit Serenity"
+      <div class="card">
+        <img 
+          src="./assets/moonlit_enchanted_meadow.webp" 
+          alt="Moonlit Serenity" 
+          onclick="showImagePreview('./assets/moonlit_enchanted_meadow.webp', 'Moonlit Serenity', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Moonlit Serenity</h2>
@@ -120,34 +153,39 @@
             Moonlight wraps us like a dream, and in your arms, the world fades.
             Just love, just peace just you and me.
           </p>
-          <button class="card-btn" aria-label="See more about Moonlit Serenity">
+          <button class="card-btn" onclick="showModal(6)" aria-label="See more about Moonlit Serenity">
             See More
           </button>
         </div>
       </div>
+
       <!-- Card 8 -->
-      <div class="card" onclick="showModal(7)">
-        <img src="./assets/sunlit_park.webp" alt="Sunlit Park" />
+      <div class="card">
+        <img 
+          src="./assets/sunlit_park.webp" 
+          alt="Sunlit Park" 
+          onclick="showImagePreview('./assets/sunlit_park.webp', 'Moment in the Sun', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Moment in the Sun</h2>
           <p>
             Sitting beneath a tree, your smile warms me more than sunlight ever
             could. In that quiet, I promise to love you forever.
           </p>
-          <button
-            class="card-btn"
-            aria-label="See more about A Moment in the Sun"
-          >
+          <button class="card-btn" onclick="showModal(7)" aria-label="See more about Moment in the Sun">
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 9 -->
-      <div class="card" onclick="showModal(8)">
-        <img
-          src="./assets/whispers_in_the_forest.webp"
-          alt="Whispers in the Forest"
+      <div class="card">
+        <img 
+          src="./assets/whispers_in_the_forest.webp" 
+          alt="Whispers in the Forest" 
+          onclick="showImagePreview('./assets/whispers_in_the_forest.webp', 'Whispers in the Forest', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Whispers in the Forest</h2>
@@ -155,44 +193,49 @@
             Even the trees hush to hear us laugh. In your gaze, the forest
             blooms, and magic feels like just another word for us.
           </p>
-          <button
-            class="card-btn"
-            aria-label="See more about Whispers in the Forest"
-          >
+          <button class="card-btn" onclick="showModal(8)" aria-label="See more about Whispers in the Forest">
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 10 -->
-      <div class="card" onclick="showModal(9)">
-        <img src="./assets/petal_rain_promise.webp" alt="Petal Rain Promise" />
+      <div class="card">
+        <img 
+          src="./assets/petal_rain_promise.webp" 
+          alt="Petal Rain Promise" 
+          onclick="showImagePreview('./assets/petal_rain_promise.webp', 'Petal Rain Promise', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Petal Rain Promise</h2>
           <p>
-            Blossoms fall around us like nature’s confetti. I take your hand,
+            Blossoms fall around us like nature's confetti. I take your hand,
             and with a soft smile, I vow love, always.
           </p>
-          <button
-            class="card-btn"
-            aria-label="See more about Petal Rain Promise"
-          >
+          <button class="card-btn" onclick="showModal(9)" aria-label="See more about Petal Rain Promise">
             See More
           </button>
         </div>
       </div>
-
+      
       <!-- Card 11 -->
-      <div class="card" onclick="showModal(10)">
-        <img src="./assets/moonlight_serenade.webp" alt="Moonlight Serenade" />
+      <div class="card">
+        <img 
+          src="./assets/moonlight_serenade.webp" 
+          alt="Moonlight Serenade" 
+          onclick="showImagePreview('./assets/moonlight_serenade.webp', 'Moonlight Serenade', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Moonlight Serenade</h2>
           <p>
-            Under a silver sky, I don’t sing, but my heart does softly, sweetly,
+            Under a silver sky, I don't sing, but my heart does softly, sweetly,
             only for you.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(10)"
             aria-label="See more about Moonlight Serenade"
           >
             See More
@@ -201,38 +244,61 @@
       </div>
 
       <!-- Card 12 -->
-      <div class="card" onclick="showModal(11)">
-        <img src="./assets/ocean_of_forever.webp" alt="Ocean of Forever" />
+      <div class="card">
+        <img 
+          src="./assets/ocean_of_forever.webp" 
+          alt="Ocean of Forever" 
+          onclick="showImagePreview('./assets/ocean_of_forever.webp', 'Ocean of Forever', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Ocean of Forever</h2>
           <p>
             Waves kiss our feet, but your hand in mine is the real tide gentle,
             strong, and forever pulling me home.
           </p>
-          <button class="card-btn" aria-label="See more about Ocean of Forever">
+          <button 
+            class="card-btn" 
+            onclick="showModal(11)" 
+            aria-label="See more about Ocean of Forever"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 13 -->
-      <div class="card" onclick="showModal(12)">
-        <img src="./assets/carnival_of_love.webp" alt="Carnival of Love" />
+      <div class="card">
+        <img 
+          src="./assets/carnival_of_love.webp" 
+          alt="Carnival of Love" 
+          onclick="showImagePreview('./assets/carnival_of_love.webp', 'Carnival of Love', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Carnival of Love</h2>
           <p>
             Lights spin and laughter swirls, but all I see is you the sweetest
             part of this beautiful, dizzying joy.
           </p>
-          <button class="card-btn" aria-label="See more about Carnival of Love">
+          <button 
+            class="card-btn" 
+            onclick="showModal(12)" 
+            aria-label="See more about Carnival of Love"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 14 -->
-      <div class="card" onclick="showModal(13)">
-        <img src="./assets/storybook_forever.webp" alt="Storybook Forever" />
+      <div class="card">
+        <img 
+          src="./assets/storybook_forever.webp" 
+          alt="Storybook Forever" 
+          onclick="showImagePreview('./assets/storybook_forever.webp', 'Storybook Forever', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Storybook Forever</h2>
           <p>
@@ -241,6 +307,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(13)"
             aria-label="See more about Storybook Forever"
           >
             See More
@@ -249,53 +316,85 @@
       </div>
 
       <!-- Card 15 -->
-      <div class="card" onclick="showModal(14)">
-        <img src="./assets/lake_of_whispers.webp" alt="Lake of Whispers" />
+      <div class="card">
+        <img 
+          src="./assets/lake_of_whispers.webp" 
+          alt="Lake of Whispers" 
+          onclick="showImagePreview('./assets/lake_of_whispers.webp', 'Lake of Whispers', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Lake of Whispers</h2>
           <p>
             By still waters and moonlight, we sit in silence. But your
             heartbeat? It speaks volumes to my soul.
           </p>
-          <button class="card-btn" aria-label="See more about Lake of Whispers">
+          <button 
+            class="card-btn" 
+            onclick="showModal(14)" 
+            aria-label="See more about Lake of Whispers"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 16 -->
-      <div class="card" onclick="showModal(15)">
-        <img src="./assets/castle_of_us.webp" alt="Castle of Us" />
+      <div class="card">
+        <img 
+          src="./assets/castle_of_us.webp" 
+          alt="Castle of Us" 
+          onclick="showImagePreview('./assets/castle_of_us.webp', 'Castle of Us', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Castle of Us</h2>
           <p>
             Hand in hand, We built this love high above the world strong like
             stone, soft like whispered dreams we never have to wake from.
           </p>
-          <button class="card-btn" aria-label="See more about Castle of Us">
+          <button 
+            class="card-btn" 
+            onclick="showModal(15)" 
+            aria-label="See more about Castle of Us"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 17 -->
-      <div class="card" onclick="showModal(16)">
-        <img src="./assets/painted_by_love.webp" alt="Painted by Love" />
+      <div class="card">
+        <img 
+          src="./assets/painted_by_love.webp" 
+          alt="Painted by Love" 
+          onclick="showImagePreview('./assets/painted_by_love.webp', 'Painted by Love', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Painted by Love</h2>
           <p>
             With laughter in our hands and color in our hearts, we paint a life
             that glows with love brushstroke by brushstroke.
           </p>
-          <button class="card-btn" aria-label="See more about Painted by Love">
+          <button 
+            class="card-btn" 
+            onclick="showModal(16)" 
+            aria-label="See more about Painted by Love"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 18 -->
-      <div class="card" onclick="showModal(17)">
-        <img src="./assets/forest_of_forever.webp" alt="Forest of Forever" />
+      <div class="card">
+        <img 
+          src="./assets/forest_of_forever.webp" 
+          alt="Forest of Forever" 
+          onclick="showImagePreview('./assets/forest_of_forever.webp', 'Forest of Forever', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Forest of Forever</h2>
           <p>
@@ -304,6 +403,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(17)"
             aria-label="See more about Forest of Forever"
           >
             See More
@@ -312,55 +412,84 @@
       </div>
 
       <!-- Card 19 -->
-      <div class="card" onclick="showModal(18)">
-        <img src="./assets/morning_with_you.webp" alt="Morning With You" />
+      <div class="card">
+        <img 
+          src="./assets/morning_with_you.webp" 
+          alt="Morning With You" 
+          onclick="showImagePreview('./assets/morning_with_you.webp', 'Morning With You', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Morning With You</h2>
           <p>
             Every sunrise begins with your smile beside me. Who needs dreams
             when you are my every waking moment?
           </p>
-          <button class="card-btn" aria-label="See more about Morning With You">
+          <button 
+            class="card-btn" 
+            onclick="showModal(18)" 
+            aria-label="See more about Morning With You"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 20 -->
-      <div class="card" onclick="showModal(19)">
-        <img src="./assets/dreamscape_garden.webp" alt="Morning With You" />
+      <div class="card">
+        <img 
+          src="./assets/dreamscape_garden.webp" 
+          alt="Dreamscape Garden" 
+          onclick="showImagePreview('./assets/dreamscape_garden.webp', 'Dreamscape Garden', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Dreamscape Garden</h2>
           <p>
             In a garden where petals float like blessings, we find our forever
             under a starlit sky.
           </p>
-          <button class="card-btn" aria-label="See more about Morning With You">
+          <button 
+            class="card-btn" 
+            onclick="showModal(19)" 
+            aria-label="See more about Dreamscape Garden"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 21 -->
-      <div class="card" onclick="showModal(20)">
-        <img src="./assets/a_gentle_forever.webp" alt="Morning With You" />
+      <div class="card">
+        <img 
+          src="./assets/a_gentle_forever.webp" 
+          alt="Gentle Forever" 
+          onclick="showImagePreview('./assets/a_gentle_forever.webp', 'Gentle Forever', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Gentle Forever</h2>
           <p>
             In your arms, even the smallest gestures feel like eternity wrapped
             in love.
           </p>
-          <button class="card-btn" aria-label="See more about Morning With You">
+          <button 
+            class="card-btn" 
+            onclick="showModal(20)" 
+            aria-label="See more about Gentle Forever"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 22 -->
-      <div class="card" onclick="showModal(21)">
+      <div class="card">
         <img
           src="./assets/a_love_the_seasons_remembern.webp"
-          alt="Morning With You"
+          alt="Love the Seasons Remember"
+          onclick="showImagePreview('./assets/a_love_the_seasons_remembern.webp', 'Love the Seasons Remember', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Love the Seasons Remember</h2>
@@ -368,32 +497,47 @@
             Some glances linger longer than a lifetime, etched into the very air
             they breathe.
           </p>
-          <button class="card-btn" aria-label="See more about Morning With You">
+          <button 
+            class="card-btn" 
+            onclick="showModal(21)" 
+            aria-label="See more about Love the Seasons Remember"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 23 -->
-      <div class="card" onclick="showModal(22)">
-        <img src="./assets/healing_in_my_sleep.webp" alt="Morning With You" />
+      <div class="card">
+        <img 
+          src="./assets/healing_in_my_sleep.webp" 
+          alt="Healing in Your Sleep" 
+          onclick="showImagePreview('./assets/healing_in_my_sleep.webp', 'Healing in Your Sleep', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Healing in Your Sleep</h2>
           <p>
             Even the broken heart finds its rhythm again when it beats next to
             yours.
           </p>
-          <button class="card-btn" aria-label="See more about Morning With You">
+          <button 
+            class="card-btn" 
+            onclick="showModal(22)" 
+            aria-label="See more about Healing in Your Sleep"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 24 -->
-      <div class="card" onclick="showModal(23)">
+      <div class="card">
         <img
           src="./assets/pinky_promise_beneath_the_sunset.webp"
           alt="Pinky Promise Beneath the Sunset"
+          onclick="showImagePreview('./assets/pinky_promise_beneath_the_sunset.webp', 'Pinky Promise Beneath the Sunset', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Pinky Promise Beneath the Sunset</h2>
@@ -403,6 +547,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(23)"
             aria-label="See more about Pinky Promise Beneath the Sunset"
           >
             See More
@@ -411,8 +556,13 @@
       </div>
 
       <!-- Card 25 -->
-      <div class="card" onclick="showModal(24)">
-        <img src="./assets/river_of_dreams.webp" alt="River of Dreams" />
+      <div class="card">
+        <img 
+          src="./assets/river_of_dreams.webp" 
+          alt="River of Dreams" 
+          onclick="showImagePreview('./assets/river_of_dreams.webp', 'River of Dreams', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>River of Dreams</h2>
           <p>
@@ -420,24 +570,34 @@
             that belonged only to us a timeless bond woven through hand-held
             promises and soft smiles.
           </p>
-          <button class="card-btn" aria-label="See more about River of Dreams">
+          <button 
+            class="card-btn" 
+            onclick="showModal(24)" 
+            aria-label="See more about River of Dreams"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 26 -->
-      <div class="card" onclick="showModal(25)">
-        <img src="./assets/home_in_your_arms.webp" alt="Home in Your Arms" />
+      <div class="card">
+        <img 
+          src="./assets/home_in_your_arms.webp" 
+          alt="Home in Your Arms" 
+          onclick="showImagePreview('./assets/home_in_your_arms.webp', 'Home in Your Arms', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Home in Your Arms</h2>
           <p>
             In a sun-drenched kitchen where magic hums through the air, we find
-            a simple, timeless truth that love’s warmest home is each other’s
+            a simple, timeless truth that love's warmest home is each other's
             embrace.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(25)"
             aria-label="See more about Home in Your Arms"
           >
             See More
@@ -446,8 +606,13 @@
       </div>
 
       <!-- Card 27 -->
-      <div class="card" onclick="showModal(26)">
-        <img src="./assets/roots_of_confidence.webp" alt="Roots of Confidence" />
+      <div class="card">
+        <img 
+          src="./assets/roots_of_confidence.webp" 
+          alt="Roots of Confidence" 
+          onclick="showImagePreview('./assets/roots_of_confidence.webp', 'Roots of Confidence', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Roots of Confidence</h2>
           <p>
@@ -456,6 +621,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(26)"
             aria-label="See more about Roots of Confidence"
           >
             See More
@@ -464,23 +630,37 @@
       </div>
 
       <!-- Card 28 -->
-      <div class="card" onclick="showModal(27)">
-        <img src="./assets/held_by_love.webp" alt="Held by Love" />
+      <div class="card">
+        <img 
+          src="./assets/held_by_love.webp" 
+          alt="Held by Love" 
+          onclick="showImagePreview('./assets/held_by_love.webp', 'Held by Love', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Held by Love</h2>
           <p>
-            You didn’t fix me. You simply stayed. And in your quiet, steady
+            You didn't fix me. You simply stayed. And in your quiet, steady
             hands, I found the love that never needed fixing.
           </p>
-          <button class="card-btn" aria-label="See more about Held by Love">
+          <button 
+            class="card-btn" 
+            onclick="showModal(27)" 
+            aria-label="See more about Held by Love"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 29 -->
-      <div class="card" onclick="showModal(28)">
-        <img src="./assets/her_light_in_my_dark.webp" alt="Light in My Dark" />
+      <div class="card">
+        <img 
+          src="./assets/her_light_in_my_dark.webp" 
+          alt="Light in My Dark" 
+          onclick="showImagePreview('./assets/her_light_in_my_dark.webp', 'Light in My Dark', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Light in My Dark</h2>
           <p>
@@ -489,6 +669,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(28)"
             aria-label="See more about Her Light in My Dark"
           >
             See More
@@ -497,34 +678,46 @@
       </div>
 
       <!-- Card 30 -->
-      <div class="card" onclick="showModal(29)">
-        <img src="./assets/promise_in_gold.webp" alt="Promise in Gold" />
+      <div class="card">
+        <img 
+          src="./assets/promise_in_gold.webp" 
+          alt="Promise in Gold" 
+          onclick="showImagePreview('./assets/promise_in_gold.webp', 'Promise in Gold', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Promise in Gold</h2>
           <p>
             In the quiet between us, I heard a forever louder than vows. Your
             hand in mine makes every dream feel real.
           </p>
-          <button class="card-btn" aria-label="See more about Promise in Gold">
+          <button 
+            class="card-btn" 
+            onclick="showModal(29)" 
+            aria-label="See more about Promise in Gold"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 31 -->
-      <div class="card" onclick="showModal(30)">
+      <div class="card">
         <img
           src="./assets/moon_between_our_hands.webp"
           alt="Moon Between Our Hands"
+          onclick="showImagePreview('./assets/moon_between_our_hands.webp', 'Moon Between Our Hands', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Moon Between Our Hands</h2>
           <p>
-            Your love isn’t loud, it’s starlit, still, and sure. When you touch
+            Your love isn't loud, it's starlit, still, and sure. When you touch
             me, the moon rises in my chest.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(30)"
             aria-label="See more about Moon Between Our Hands"
           >
             See More
@@ -533,19 +726,22 @@
       </div>
 
       <!-- Card 32 -->
-      <div class="card" onclick="showModal(31)">
+      <div class="card">
         <img
           src="./assets/thread_of_destiny.webp"
-          alt="Moon Between Our Hands"
+          alt="Thread of Destiny"
+          onclick="showImagePreview('./assets/thread_of_destiny.webp', 'Thread of Destiny', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Thread of Destiny</h2>
           <p>
             Where distance stretches, love stays close. This thread between us
-            doesn’t fray, it guides me softly home to your heart.
+            doesn't fray, it guides me softly home to your heart.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(31)"
             aria-label="See more about Thread of Destiny"
           >
             See More
@@ -554,8 +750,13 @@
       </div>
 
       <!-- Card 33 -->
-      <div class="card" onclick="showModal(32)">
-        <img src="./assets/dreamspell_embrace.webp" alt="Dreamspell Embrace" />
+      <div class="card">
+        <img 
+          src="./assets/dreamspell_embrace.webp" 
+          alt="Dreamspell Embrace" 
+          onclick="showImagePreview('./assets/dreamspell_embrace.webp', 'Dreamspell Embrace', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Dreamspell Embrace</h2>
           <p>
@@ -564,6 +765,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(32)"
             aria-label="See more about Dreamspell Embrace"
           >
             See More
@@ -572,10 +774,12 @@
       </div>
 
       <!-- Card 34 -->
-      <div class="card" onclick="showModal(33)">
+      <div class="card">
         <img
           src="./assets/gardens_of_the_heart.webp"
           alt="Gardens of the Heart"
+          onclick="showImagePreview('./assets/gardens_of_the_heart.webp', 'Gardens of the Heart', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Gardens of the Heart</h2>
@@ -585,6 +789,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(33)"
             aria-label="See more about Gardens of the Heart"
           >
             See More
@@ -593,10 +798,12 @@
       </div>
 
       <!-- Card 35 -->
-      <div class="card" onclick="showModal(34)">
+      <div class="card">
         <img
           src="./assets/henna_stained_promises.webp"
           alt="Henna Stained Promises"
+          onclick="showImagePreview('./assets/henna_stained_promises.webp', 'Henna Stained Promises', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Henna Stained Promises</h2>
@@ -606,6 +813,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(34)"
             aria-label="See more about Henna Stained Promises"
           >
             See More
@@ -614,19 +822,22 @@
       </div>
 
       <!-- Card 36 -->
-      <div class="card" onclick="showModal(35)">
+      <div class="card">
         <img
           src="./assets/home_inside_my_heart.webp"
           alt="Home Inside My Heart"
+          onclick="showImagePreview('./assets/home_inside_my_heart.webp', 'Home Inside My Heart', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Home Inside My Heart</h2>
           <p>
-            You rest inside my heart, not like a guest, but like you’ve always
+            You rest inside my heart, not like a guest, but like you've always
             belonged there.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(35)"
             aria-label="See more about Home Inside My Heart"
           >
             See More
@@ -635,19 +846,22 @@
       </div>
 
       <!-- Card 37 -->
-      <div class="card" onclick="showModal(36)">
+      <div class="card">
         <img
           src="./assets/the_evenings_dream.webp"
           alt="The Evenings I Dream You Home"
+          onclick="showImagePreview('./assets/the_evenings_dream.webp', 'The Evenings I Dream You Home', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>The Evenings I Dream You Home</h2>
           <p>
-            One day, you’ll sit across from me, your smile soft, your presence
+            One day, you'll sit across from me, your smile soft, your presence
             quiet, and every ache I carried will turn into light.
           </p>
           <button
             class="card-btn"
+            onclick="showModal(36)"
             aria-label="See more about The Evenings I Dream You Home"
           >
             See More
@@ -656,10 +870,12 @@
       </div>
 
       <!-- Card 38 -->
-      <div class="card" onclick="showModal(37)">
+      <div class="card">
         <img
           src="./assets/us_beneath_a_shared_star.webp"
           alt="Us, Beneath a Shared Star"
+          onclick="showImagePreview('./assets/us_beneath_a_shared_star.webp', 'Us, Beneath a Shared Star', event)"
+          loading="lazy"
         />
         <div class="card-content">
           <h2>Us, Beneath a Shared Star</h2>
@@ -669,6 +885,7 @@
           </p>
           <button
             class="card-btn"
+            onclick="showModal(37)"
             aria-label="See more about Us Beneath a Shared Star"
           >
             See More
@@ -678,15 +895,24 @@
 
 
       <!-- Card 39 -->
-      <div class="card" onclick="showModal(38)">
-        <img src="./assets/celestial_connection.webp" alt="Celestial Embrace" />
+      <div class="card">
+        <img 
+          src="./assets/celestial_connection.webp" 
+          alt="Celestial Embrace" 
+          onclick="showImagePreview('./assets/celestial_connection.webp', 'Celestial Embrace', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Celestial Embrace</h2>
           <p>
             Between stars and silence, we met — souls outlined in light, balanced on a touch. 
             The universe held its breath as love bridged the void.
           </p>
-          <button class="card-btn" aria-label="See more about Celestial Embrace">
+          <button 
+            class="card-btn" 
+            onclick="showModal(38)" 
+            aria-label="See more about Celestial Embrace"
+          >
             See More
           </button>
         </div>
@@ -694,44 +920,141 @@
 
 
       <!-- Card 40 -->
-      <div class="card" onclick="showModal(39)">
-        <img src="./assets/shared_warmth.webp" alt="Shared Warmth" />
+      <div class="card">
+        <img 
+          src="./assets/shared_warmth.webp" 
+          alt="Shared Warmth" 
+          onclick="showImagePreview('./assets/shared_warmth.webp', 'Shared Warmth', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Shared Warmth</h2>
           <p>
             In the hush of a cold evening, your hands cupped the flame with mine. 
-            Between flickers and shadows, we made light — together.
+            Between flickers and shadows, we made light, together.
           </p>
-          <button class="card-btn" aria-label="See more about Shared Warmth">
+          <button 
+            class="card-btn" 
+            onclick="showModal(39)" 
+            aria-label="See more about Shared Warmth"
+          >
             See More
           </button>
         </div>
       </div>
 
       <!-- Card 41 -->
-      <div class="card" onclick="showModal(40)">
-        <img src="./assets/across_the_stars.webp" alt="Across the Stars" />
+      <div class="card">
+        <img 
+          src="./assets/across_the_stars.webp" 
+          alt="Across the Stars" 
+          onclick="showImagePreview('./assets/across_the_stars.webp', 'Across the Stars', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Across the Stars</h2>
           <p>
             Light-years apart, yet our hands still reach. In the quiet pull of the cosmos, love orbits patiently — always finding its way back.
           </p>
-          <button class="card-btn" aria-label="See more about Across the Stars">
+          <button 
+            class="card-btn" 
+            onclick="showModal(40)" 
+            aria-label="See more about Across the Stars"
+          >
             See More
           </button>
         </div>
       </div>
 
+
       <!-- Card 42 -->
-      <div class="card" onclick="showModal(41)">
-        <img src="./assets/our_forever.webp" alt="Our Forever" />
+      <div class="card">
+        <img 
+          src="./assets/across_the_stars.webp" 
+          alt="Meet Morning Brew Buddy!" 
+          onclick="showImagePreview('./assets/meet_morning_brew_buddy.webp', 'Meet Morning Brew Buddy!', event)"
+          loading="lazy"
+        />
+        <div class="card-content">
+          <h2>Meet Morning Brew Buddy!</h2>
+          <p>
+            Start day with a smile! Our cheerful coffee mascot brings warmth, energy, and good vibes to every cup. Whether you're rushing to work or relaxing at home, let our Brew Buddy be your perfect caffeine companion.
+          </p>
+          <button 
+            class="card-btn" 
+            onclick="showModal(41)" 
+            aria-label="See more about Meet Morning Brew Buddy!"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 43 -->
+       <div class="card">
+        <img 
+          src="./assets/a_touch_that_lights_the_soul.webp" 
+          alt="A Touch That Lights the Soul" 
+          onclick="showImagePreview('./assets/a_touch_that_lights_the_soul.webp', 'A Touch That Lights the Soul', event)"
+          loading="lazy"
+        />
+        <div class="card-content">
+          <h2>A Touch That Lights the Soul</h2>
+          <p>
+          Sometimes, a single gesture can ignite warmth, healing, and hope. This glowing moment captures the power of connection — when one heart touches another, and light flows through the cracks. A symbol of empathy, love, and emotional presence.
+          </p>
+          <button 
+            class="card-btn" 
+            onclick="showModal(42)" 
+            aria-label="See more about the Touch That Lights the Soul"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 44 -->
+      <div class="card">
+        <img 
+          src="./assets/late_night_drives_and_simple_joys.webp" 
+          alt="Late-Night Drives and Simple Joys" 
+          onclick="showImagePreview('./assets/late_night_drives_and_simple_joys.webp', 'Late-Night Drives and Simple Joys', event)"
+          loading="lazy"
+        />
+        <div class="card-content">
+          <h2>Late-Night Drives and Simple Joys</h2>
+          <p>
+            There’s a special kind of magic in quiet car rides, shared meals, and knowing glances. This scene captures the comfort of being with someone who makes even fast food feel like a feast and every moment feel like home.
+          </p>
+          <button 
+            class="card-btn" 
+            onclick="showModal(43)" 
+            aria-label="See more about Late-Night Drives and Simple Joys"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 45 -->
+      <div class="card">
+        <img 
+          src="./assets/our_forever.webp" 
+          alt="Our Forever" 
+          onclick="showImagePreview('./assets/our_forever.webp', 'Our Forever', event)"
+          loading="lazy"
+        />
         <div class="card-content">
           <h2>Our Forever</h2>
           <p>
             To my dearest Butterfly, our story began before we met. Now, I dream
             of living every page beside you, always.
           </p>
-          <button class="card-btn" aria-label="See my love letter to you">
+          <button 
+            class="card-btn" 
+            onclick="showModal(44)" 
+            aria-label="See my love letter to you"
+          >
             Open My Heart
           </button>
         </div>
@@ -764,25 +1087,23 @@
         </button>
       </div>
     </div>
-
-    <!-- Floating Elements -->
-    <!--
-      <div class="heart" style="animation-delay: 2s">💖</div>
-    <div class="butterfly" style="animation-delay: 3s">🦋</div>
-    <div class="star" style="animation-delay: 4s">✨</div>
-    <div class="petal" style="animation-duration: 6s; animation-delay: 0s">
-      🌸
+    
+    <!-- Image Preview Modal -->
+    <div class="image-modal" id="imageModal">
+      <div class="image-modal-content">
+        <span class="close-image-modal" onclick="closeImagePreview()">&times;</span>
+        <div class="nav-arrow prev" onclick="showPreviousImage()">&lsaquo;</div>
+        <div class="nav-arrow next" onclick="showNextImage()">&rsaquo;</div>
+        <h2 id="imageTitle"></h2>
+        <p id="imageDescription" class="preview-description"></p>
+        <img id="previewImage" src="" alt="Preview">
+        <div class="preview-actions">
+          <button id="previewSeeMore" class="preview-btn" onclick="showModalFromPreview()">
+            See More
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="petal" style="animation-duration: 7s; animation-delay: 2s">
-      🌸
-    </div>
-     -->
-
-    <!--
-      <div class="scrolling-note">
-      Each card is a whisper of my love, a dream waiting for you, my forever.
-    </div>
-    -->
 
     <script src="js/dream_gallery.js"></script>
   </body>
